@@ -34,7 +34,9 @@
                     <a href="adtajo@gmail.com ">adtajo@gmail.com</a>
                 </div>
             </div>
-
+            <div>
+                <button id="popup" onclick="div_show()">Contact Me</button>
+            </div>
         </section>
         <section>
             <div class="section-title">Objective</div>
@@ -187,27 +189,30 @@
         </section>
     </div>
     <!---Contact us form-->
-    <div class="wrapper">
-        <h2>Contact Me</h2>
-        <div id="error_message"></div>
-        <form id="myform" onsubmit="return validate();">
-            <div class="input_field">
-                <input type="text" placeholder="Name" id="name">
-            </div>
+    <div id="wrapper">
+        <div id="popupform">
+            <img id="close" src="image4.png" onclick="div_hide()">
+            <h2>Contact Me</h2>
+            <div id="error_message"></div>
+            <form id="myform" onsubmit="return validate();">
+                <div class="input_field">
+                    <input type="text" placeholder="Name" id="name">
+                </div>
 
-            <div class="input_field">
-                <input type="text" placeholder="Email" id="email">
-            </div>
-            <div class="input_field">
-                <input type="text" placeholder="title" id="title">
-            </div>
-            <div class="input_field">
-                <textarea placeholder="Message" id="message"></textarea>
-            </div>
-            <div class="btn">
-                <input type="submit">
-            </div>
-        </form>
+                <div class="input_field">
+                    <input type="text" placeholder="Email" id="email">
+                </div>
+                <div class="input_field">
+                    <input type="text" placeholder="Title Of Message" id="title">
+                </div>
+                <div class="input_field">
+                    <textarea placeholder="Message" id="message"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
     </div>
     <script src="Taiwo.js"></script>
 </body>
