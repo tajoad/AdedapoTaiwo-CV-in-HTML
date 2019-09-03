@@ -13,7 +13,7 @@ function validate(){
       error_message.innerHTML = text;
       return false;
     }
-    if(title.length < 10){
+    if(title.length < 3){
       text = "Please Enter a Correct Title";
       error_message.innerHTML = text;
       return false;
