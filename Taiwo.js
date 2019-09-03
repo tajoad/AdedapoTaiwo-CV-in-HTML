@@ -32,3 +32,11 @@ function validate(){
     alert("Form Submitted Successfully!");
     return true;
   }
+  //Function To Display Popup
+function div_show() {
+  document.getElementById('wrapper').style.display = "block";
+  }
+  //Function to Hide Popup
+  function div_hide(){
+  document.getElementById('wrapper').style.display = "none";
+  }
